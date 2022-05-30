@@ -22,6 +22,10 @@ type Mutation {
     saveTruck(id: ID, plateNo: String!): Truck!
 
     saveShipment(id: ID, name: String!, origin: String!, destination: String!, deliveryDate: String!, truckId: ID): Shipment!
+
+    deleteTruck(id: ID!): Boolean!
+
+    deleteShipment(id: ID!): Boolean!
 }
 
 
