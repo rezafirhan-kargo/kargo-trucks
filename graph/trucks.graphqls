@@ -17,6 +17,8 @@ type Query {
     paginatedTruck(page: Int!, first: Int!): [Truck!]!
 
     paginatedShipment(page: Int!, first: Int!): [Shipment!]!
+
+    exportTruck(page: Int!, first: Int!): [Truck!]!
 }
 type Mutation { 
     saveTruck(id: ID, plateNo: String!): Truck!
